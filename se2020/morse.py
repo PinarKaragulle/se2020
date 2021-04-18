@@ -56,6 +56,7 @@ MORSE_CODE_DICT = {
     ")": "-.--.-",
 }
 
+
 # Function to encrypt the string
 # according to the morse code chart
 def encode_morse(message):
@@ -120,18 +121,3 @@ def decode_morse(message):
                 citext = ""
 
     return decipher
-
-
-## Hard-coded driver function to run the program
-# def main():
-#    message = "GEEKS-FOR-GEEKS"
-#    result = encrypt(message.upper())
-#    print (result)
-#
-#    message = "--. . . -.- ... -....- ..-. --- .-. -....- --. . . -.- ... "
-#    result = decrypt(message)
-#    print (result)
-#
-## Executes the main function
-# if __name__ == '__main__':
-#    main()

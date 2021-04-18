@@ -13,18 +13,25 @@ Flask = "^1.1.2"
 pytest = "^6.2.3"
 tox = "^3.23.0"
 pytest-cov = "^2.11.1"
+flake8 = "^3.9.1"
+black = "^20.8b1"
+Sphinx = "^3.5.4"
 
 
 [tool.tox] 
 legacy_tox_ini = """
 [tox] 
-envlist = py39
+envlist = py39, style
 isolated_build = True 
 
 [testenv] 
 deps = pytest 
 	flask 
 commands = pytest tests 
+
+[testenv:style]
+deps = flake8
+commands = flake8 se2020
 """
 
 
