@@ -1,1 +1,1 @@
-Web: .venv/bin/python server.py
+web:gunicorn wsgi:app
