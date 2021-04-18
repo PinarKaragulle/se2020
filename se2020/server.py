@@ -15,6 +15,3 @@ def encode(phrase):
     payload = {"result": encode_morse(phrase)}
     return jsonify(payload)
 
-
-if __name__ == "__main__":
-    app.run()
